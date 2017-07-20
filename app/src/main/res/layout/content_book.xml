@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.sachin.fms_client_v1.BookActivity"
+    tools:showIn="@layout/activity_book">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/root_view"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/child_1"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/complaint"
+                    android:hint="Complaint"
+                    android:maxLines="2"
+                    android:layout_weight="10"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_height="wrap_content" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/add"
+                    android:src="@drawable/ic_add_black_36dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/child_2"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/format"
+                    android:hint="Asset Format"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:layout_weight="10"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_height="wrap_content" />
+                <ImageButton
+                    android:id="@+id/qr_scanner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+
+                    android:src="@drawable/ic_barcode_black_36dp" />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+        <Spinner
+            android:id="@+id/spinner_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/secondary_text" />
+        <Spinner
+            android:id="@+id/spinner_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+
+            android:paddingTop="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/secondary_text" />
+
+        <Spinner
+            android:id="@+id/spinner_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+
+            android:paddingTop="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/secondary_text" />
+
+        <Spinner
+            android:id="@+id/spinner_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+
+            android:paddingTop="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/secondary_text" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="16dp"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/content"
+                android:hint="Asset Code"
+                android:layout_alignRight="@+id/qr_scanner"
+
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+
+
+        <Spinner
+            android:id="@+id/spinner_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+
+            android:paddingTop="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/secondary_text" />
+
+
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+
+            android:hint="Available Date"
+            android:inputType="date"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp" />
+
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="Available time"
+            android:inputType="time"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp" />
+
+
+        <Button
+            android:id="@+id/request_send"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+
+            android:background="@drawable/ripple"
+            android:text="Send Request"
+            android:textColor="#CFD8DC"
+            android:textSize="@dimen/material_text_button"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

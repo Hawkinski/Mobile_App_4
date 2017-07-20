@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.sachin.fms_client_v1.FollowUpActivity"
+    tools:showIn="@layout/activity_follow_up">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ProgressBar
+            android:id="@+id/pbar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+
+            android:indeterminate="true"/>
+        <TableRow
+            android:padding="10dp">
+            <TextView
+                android:text="Reported Date"
+                android:textStyle="bold"
+                android:id="@+id/text0"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:text="Location"
+                android:id="@+id/text0_0"
+                android:layout_weight="1"
+
+                android:paddingLeft="20dp"
+
+                />
+
+
+        </TableRow>
+        <View android:layout_width="match_parent"
+            android:background="@color/divider_color"
+            android:layout_height="1dp" />
+
+
+
+        <TableRow
+            android:padding="10dp">
+            <TextView
+                android:text="Reported Time"
+                android:id="@+id/text1"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:text="Location"
+                android:id="@+id/text1_1"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+
+                />
+        </TableRow>
+        <View android:layout_width="match_parent"
+            android:background="@color/divider_color"
+            android:layout_height="1dp" />
+        <TableRow
+            android:padding="10dp">
+            <TextView
+                android:text="Location"
+                android:textStyle="bold"
+                android:id="@+id/text2"
+                android:paddingLeft="10dp"
+
+                />
+            <TextView
+                android:text="Location"
+                android:id="@+id/text2_2"
+                android:layout_weight="1"
+
+                android:paddingLeft="20dp"
+
+                />
+
+
+        </TableRow>
+        <View android:layout_width="match_parent"
+            android:background="@color/divider_color"
+            android:layout_height="1dp" />
+        <TableRow
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <TextView
+                android:text="Building"
+                android:textStyle="bold"
+                android:id="@+id/text3"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:text="Location"
+                android:id="@+id/text3_3"
+                android:layout_weight="1"
+
+                android:layout_width="match_parent"
+                android:paddingLeft="20dp"
+                />
+
+
+        </TableRow>
+        <View android:layout_width="match_parent"
+            android:background="@color/divider_color"
+            android:layout_height="1dp" />
+        <TableRow
+            android:padding="10dp">
+            <TextView
+                android:text="Unit"
+                android:id="@+id/text4"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:text="Location"
+                android:id="@+id/text4_4"
+                android:layout_weight="1"
+
+                android:paddingLeft="20dp"
+                />
+
+
+        </TableRow>
+        <View android:layout_width="match_parent"
+            android:background="@color/divider_color"
+            android:layout_height="1dp" />
+        <TableRow
+            android:padding="10dp">
+            <TextView
+                android:text="Contract #"
+                android:textStyle="bold"
+                android:id="@+id/text5"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:text="Location"
+                android:id="@+id/text5_5"
+                android:layout_weight="1"
+
+                android:paddingLeft="20dp"
+                />
+
+
+        </TableRow>
+
+
+
+        <View android:layout_width="match_parent"
+            android:background="@color/divider_color"
+            android:layout_height="1dp" />
+
+        <TableRow
+            android:padding="10dp">
+            <TextView
+                android:text="Remarks"
+                android:textStyle="bold"
+                android:id="@+id/text9"
+                android:paddingLeft="10dp"
+                />
+            <EditText
+                android:id="@+id/text6_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="500"
+                android:layout_weight="1"
+                android:singleLine="false"
+                android:paddingLeft="20dp"
+                />
+
+
+        </TableRow>
+        <View android:layout_width="match_parent"
+            android:background="@color/divider_color"
+            android:layout_height="1dp" />
+        <TableRow
+            android:padding="10dp">
+            <TextView
+                android:text="Priority"
+                android:id="@+id/text10"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:text="Location"
+                android:layout_weight="1"
+
+                android:id="@+id/text7_7"
+                android:paddingLeft="20dp"
+                />
+
+
+        </TableRow>
+        <View android:layout_width="match_parent"
+            android:background="@color/divider_color"
+            android:layout_height="1dp" />
+
+        <TableRow
+            android:padding="10dp">
+            <TextView
+                android:text="Scheduled Date"
+                android:id="@+id/text11"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:text="Location"
+                android:layout_weight="1"
+
+                android:id="@+id/text8_8"
+                android:paddingLeft="20dp"
+                />
+
+
+        </TableRow>
+        <View android:layout_width="match_parent"
+            android:background="@color/divider_color"
+            android:layout_height="1dp" />
+        <TableRow
+            android:padding="10dp">
+            <TextView
+                android:text="Scheduled Time"
+                android:id="@+id/text12"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:text="Location"
+                android:layout_weight="1"
+
+                android:id="@+id/text9_9"
+                android:paddingLeft="20dp"
+                />
+
+
+        </TableRow>
+        <View android:layout_width="match_parent"
+            android:background="@color/divider_color"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:padding="10dp">
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:textColor="#FFFFFF"
+                android:text="Cancel"
+                android:background="@drawable/ripple"
+                android:textStyle="bold"
+                android:layout_gravity="bottom" />
+            <Button
+                android:id="@+id/follow_up"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/ripple"
+                android:textStyle="bold"
+                android:text="Follow Up"
+                android:layout_gravity="bottom"
+                android:layout_alignTop="@+id/cancel"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    </TableLayout>
+
+</android.support.v4.widget.NestedScrollView>
